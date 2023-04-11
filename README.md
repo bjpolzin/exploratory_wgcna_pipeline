@@ -9,7 +9,7 @@
 # Exploratory WGCNA Pipeline <a name="exploratory-wgcna-pipeline"></a>
 This repository contains an R-based exploratory pipeline for Weighted Gene Co-expression Network Analysis (WGCNA), designed for initial exploratory analyses to compare the results of different soft threshold powers. The pipeline takes gene expression and behavioral data as input and generates co-expression networks, soft-threshold plots, module-trait relationship plots, and correlation/p-value tables. The pipeline is modular, allowing users to modify or extend the steps as needed.
 
-This is all based on the WGCNA codebase originally created by Peter Langfelder and Steve Horvath. Please see acknowledgements at the bottom of this page for citation and refer to [this page](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/) if you are interested in learning more about the WGCNA method.
+This pipeline is built upon the foundational WGCNA codebase, originally developed by Peter Langfelder and Steve Horvath. For citation information, please refer to the acknowledgements section at the bottom of [this page](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/). If you are interested in further exploring the WGCNA method, additional resources can be found on this page as well.
 
 ## Prerequisites <a name="prerequisites"></a>
 Before running the pipeline, please make sure you have the following R packages installed:
