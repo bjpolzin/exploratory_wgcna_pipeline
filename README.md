@@ -4,8 +4,7 @@
 3. [Pipeline Overview](#pipeline-overview)
 4. [Usage](#usage)
 5. [Output](#output)
-6. [License](#license)
-7. [Acknowledgements](#acknowledgements)
+6. [Acknowledgements](#acknowledgements)
 
 # Exploratory WGCNA Pipeline <a name="exploratory-wgcna-pipeline"></a>
 This repository contains an R-based exploratory pipeline for Weighted Gene Co-expression Network Analysis (WGCNA), designed for initial exploratory analyses to compare the results of different soft threshold powers. The pipeline takes gene expression and behavioral data as input and generates co-expression networks, soft-threshold plots, module-trait relationship plots, and correlation/p-value tables. The pipeline is modular, allowing users to modify or extend the steps as needed.
@@ -51,9 +50,6 @@ The pipeline generates the following output files in automatically generated dir
 * Hub genes (TXT)
 
 The output files are organized into separate directories for each soft-threshold power under the results directory.
-
-## License <a name="license"></a>
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Acknowledgements <a name = "acknowledgements"></a>
 This pipeline utilizes the WGCNA package, originally developed by Peter Langfelder and Steve Horvath. To cite the original creators of WGCNA, please refer to the following publication:
