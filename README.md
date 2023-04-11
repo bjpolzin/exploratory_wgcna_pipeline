@@ -20,7 +20,7 @@ Before running the pipeline, please make sure you have the following R packages 
 * `data.table`
 
 ## Pipeline Overview <a name="pipeline-overview"></a>
-The main pipeline script is `exploratory_wgcna_pipeline.`R. This script sets up the necessary parameters and data directories and sources the following three modules:
+The main pipeline script is `exploratory_wgcna_pipeline.R`. This script sets up the necessary parameters and data directories and sources the following three modules:
 
 1. `01_read_organize_data.R` - Reads and organizes gene expression and behavioral data.
 2. `02_investigate_sft.R` - Creates soft-threshold plots to determine appropriate powers to explore.
@@ -30,6 +30,8 @@ The main pipeline script is `exploratory_wgcna_pipeline.`R. This script sets up 
 1. Configure the parameters at the beginning of `exploratory_wgcna_pipeline.R`. Set the study identifier, data directories, and variables for filtering out low data.
 2. Indicate the group selection based on the sample ID and create a vector of soft-threshold powers to investigate.
 3. Run `exploratory_wgcna_pipeline.R`.
+
+Below is a brief overview of what each module does, however, the individual R script modules contain in-depth instructions and details of what the code is doing.
 
 ### Module 1: Read in data and organize data for input to WGCNA
 The first module reads and processes the gene expression and behavioral data. It takes care of transposing the data and filtering out low-expression genes. The module ensures that the sample IDs for both datasets are identical and prints a message if they are consistent or a warning if they do not match.
