@@ -5,10 +5,12 @@ This repository contains an R-based exploratory pipeline for Weighted Gene Co-ex
 ## Prerequisites
 
 Before running the pipeline, please make sure you have the following R packages installed:
-
+```
 tidyverse
 WGCNA
 data.table (optional, for faster reading of large datasets)
+```
+
 Pipeline Overview
 
 The main pipeline script is Exploratory_WGCNA_Pipeline.R. This script sets up the necessary parameters and data directories and sources the following three modules:
