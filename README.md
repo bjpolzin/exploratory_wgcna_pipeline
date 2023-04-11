@@ -1,8 +1,16 @@
-# Exploratory WGCNA Pipeline
+# Table of Contents
+1. [Exploratory WGCNA Pipeline](#exploratory-wgcna-pipeline)
+2. [Prerequisites](#prerequisites)
+3. [Pipeline Overview](#pipeline-overview)
+4. [Usage](#usage)
+5. [Output](#output)
+6. [License](#license)
+
+# Exploratory WGCNA Pipeline <a name="exploratory-wgcna-pipeline"></a>
 
 This repository contains an R-based exploratory pipeline for Weighted Gene Co-expression Network Analysis (WGCNA). The pipeline takes gene expression and behavioral data as input and generates co-expression networks, soft-threshold plots, module-trait relationship plots, and correlation/p-value tables. The pipeline is modular, allowing users to modify or extend the steps as needed.
 
-## Prerequisites
+## Prerequisites <a name="prerequisites"></a>
 
 Before running the pipeline, please make sure you have the following R packages installed:
 
@@ -11,14 +19,14 @@ Before running the pipeline, please make sure you have the following R packages 
 * `WGCNA`
 * `data.table`
 
-## Pipeline Overview
+## Pipeline Overview <a name="pipeline-overview"></a>
 The main pipeline script is Exploratory_WGCNA_Pipeline.R. This script sets up the necessary parameters and data directories and sources the following three modules:
 
 1. `01_read_organize_data.R` - Reads and organizes gene expression and behavioral data.
 2. `02_investigate_sft.R` - Creates soft-threshold plots to determine appropriate powers to explore.
 3. `03_create_networks_export_results.R` - Performs WGCNA and exports the results.
 
-## Usage
+## Usage <a name="usage"></a>
 1. Configure the parameters at the beginning of `exploratory_wgcna_pipeline.R`. Set the study identifier, data directories, and variables for filtering out low data.
 2. Indicate the group selection based on the sample ID and create a vector of soft-threshold powers to investigate.
 3. Run `exploratory_wgcna_pipeline.R`.
@@ -32,8 +40,7 @@ The second module creates soft-threshold plots to determine the powers to explor
 ### Module 3: Perform WGCNA and export results
 The third module iterates through the specified soft-threshold powers, creating networks, calculating module eigengenes and correlations, and exporting the results. The module generates dendrogram plots, module-trait relationship plots, correlation and p-value tables, and hub genes for each power. The results are saved in separate directories for each power under the results directory.
 
-## Output
-
+## Output <a name="output"></a>
 The pipeline generates the following output files:
 
 * Soft-threshold plots (PDF)
@@ -44,6 +51,5 @@ The pipeline generates the following output files:
 
 The output files are organized into separate directories for each soft-threshold power under the results directory.
 
-## License
-
+## License <a name="license"></a>
 This project is licensed under the MIT License. See the LICENSE file for details.
