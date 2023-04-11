@@ -27,9 +27,12 @@ The main pipeline script is `exploratory_wgcna_pipeline.R`. This script sets up 
 3. `03_create_networks_export_results.R` - Performs WGCNA and exports the results.
 
 ## Usage <a name="usage"></a>
-1. Configure the parameters at the beginning of `exploratory_wgcna_pipeline.R`. Set the study identifier, data directories, and variables for filtering out low data.
-2. Indicate the group selection based on the sample ID and create a vector of soft-threshold powers to investigate.
-3. Run `exploratory_wgcna_pipeline.R`.
+1. Open exploratory_wgcna_pipeline.R in your working directory. Note that multiple subdirectories will be created relative to the home directory. To avoid potential issues, it is recommended to use an R project file for easier management of directories and dependencies.
+2. Configure the parameters at the beginning of exploratory_wgcna_pipeline.R. Set the static variables, such as the study identifier, data directories, etc.
+3. Execute Module 1 (01_read_organize_data.R) and Module 2 (02_investigate_sft.R).
+4. Examine the generated sft_plot to determine the powers you want to investigate. Create a vector of all the soft-threshold powers you wish to explore in your results.
+5. Run Module 3 (03_create_networks_export_results.R).
+6. Enjoy reviewing your results! I hope you discover something interesting and insightful!
 
 The following is a concise summary of each module's function. For a comprehensive understanding and in-depth explanation of the code, please refer to the individual R script modules, which contain detailed instructions and descriptions.
 
