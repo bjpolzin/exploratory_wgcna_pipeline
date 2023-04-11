@@ -31,7 +31,7 @@ The main pipeline script is `exploratory_wgcna_pipeline.R`. This script sets up 
 2. Indicate the group selection based on the sample ID and create a vector of soft-threshold powers to investigate.
 3. Run `exploratory_wgcna_pipeline.R`.
 
-Below is a brief overview of what each module does, however, the individual R script modules contain in-depth instructions and details of what the code is doing.
+The following is a concise summary of each module's function. For a comprehensive understanding and in-depth explanation of the code, please refer to the individual R script modules, which contain detailed instructions and descriptions.
 
 ### Module 1: Read in data and organize data for input to WGCNA
 The first module reads and processes the gene expression and behavioral data. It takes care of transposing the data and filtering out low-expression genes. The module ensures that the sample IDs for both datasets are identical and prints a message if they are consistent or a warning if they do not match.
