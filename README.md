@@ -5,17 +5,17 @@ This repository contains an R-based exploratory pipeline for Weighted Gene Co-ex
 ## Prerequisites
 
 Before running the pipeline, please make sure you have the following R packages installed:
-```
-tidyverse
-WGCNA
-data.table (optional, for faster reading of large datasets)
-```
 
-Pipeline Overview
+* tidyverse
+* dplyr
+* WGCNA
+* data.table
+
+## Pipeline Overview
 
 The main pipeline script is Exploratory_WGCNA_Pipeline.R. This script sets up the necessary parameters and data directories and sources the following three modules:
 
-01_read_organize_data.R - Reads and organizes gene expression and behavioral data.
+* `01_read_organize_data.R` - Reads and organizes gene expression and behavioral data.
 02_investigate_sft.R - Creates soft-threshold plots to determine appropriate powers to explore.
 03_create_networks_export_results.R - Performs WGCNA and exports the results.
 Usage
