@@ -19,8 +19,14 @@ cex1 <- 0.9
 
 # Save the plots to a PDF file
 results_dir <- "./results/"
+sft_results_dir <- "./results/sft_results/"
+sft_plots_dir <- "./results/sft_results/plots/"
+
 dir.create(results_dir)
-pdf(file = paste0(results_dir, "plots/", study_sig, "_soft_thresholding_power_plots.pdf"))
+dir.create(sft_results_dir)
+dir.create(sft_plots_dir)
+
+pdf(file = paste0(sft_plots_dir, study_sig, "_soft_thresholding_power_plots.pdf"))
 
 # Plot scale-free topology fit index as a function of the soft-thresholding power
 plot(sft$fitIndices[, 1], -sign(sft$fitIndices[, 3]) * sft$fitIndices[, 2],
@@ -49,4 +55,9 @@ text(sft$fitIndices[, 1], sft$fitIndices[, 5],
 dev.off()
 
 # Save scale-free topology data
-saveRDS(sft, paste0(results_dir, study_sig, "_sft_data.RData"))
+working_rdata_dir <- "./results/sft_results/working_rdata/"
+dir.create(working_rdata_dir)
+saveRDS(sft, paste0(working_rdata_dir, study_sig, "_sft_data.RData"))
+
+# Clean up garbage
+rm(sft_plots_dir, sft_results_dir)
