@@ -55,7 +55,7 @@ The output files are organized into separate directories for each soft-threshold
 ## License <a name="license"></a>
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Acknowledgements <a name = "acknowledgements"></a
+## Acknowledgements <a name = "acknowledgements"></a>
 This pipeline utilizes the WGCNA package, originally developed by Peter Langfelder and Steve Horvath. To cite the original creators of WGCNA, please refer to the following publication:
 
 Langfelder, P., & Horvath, S. (2008). WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 9(1), 559.
