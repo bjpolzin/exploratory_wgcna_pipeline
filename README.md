@@ -36,11 +36,12 @@ The third module iterates through the specified soft-threshold powers, creating 
 
 The pipeline generates the following output files:
 
-Soft-threshold plots (PDF)
-Dendrogram plots (PNG)
-Module-trait relationship plots (PDF)
-Correlation and p-value tables (CSV)
-Hub genes (TXT)
+* Soft-threshold plots (PDF)
+* Dendrogram plots (PNG)
+* Module-trait relationship plots (PDF)
+* Correlation and p-value tables (CSV)
+* Hub genes (TXT)
+
 The output files are organized into separate directories for each soft-threshold power under the results directory.
 
 ## License
