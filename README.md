@@ -42,7 +42,7 @@ The second module creates soft-threshold plots to determine the powers to explor
 The third module iterates through the specified soft-threshold powers, creating networks, calculating module eigengenes and correlations, and exporting the results. The module generates dendrogram plots, module-trait relationship plots, correlation and p-value tables, and hub genes for each power. The results are saved in separate directories for each power under the `results` directory.
 
 ## Output <a name="output"></a>
-The pipeline generates the following output files in automatically generated folders:
+The pipeline generates the following output files in automatically generated directories:
 
 * Soft-threshold plots (PDF)
 * Dendrogram plots (PNG)
