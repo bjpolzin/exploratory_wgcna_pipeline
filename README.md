@@ -40,7 +40,7 @@ The following is a concise summary of each module's function. For a comprehensiv
 The first module reads and processes the gene expression and behavioral data. It takes care of transposing the data and filtering out low-expression genes. The module ensures that the sample IDs for both datasets are identical and prints a message if they are consistent or a warning if they do not match.
 
 ### Module 2: Create soft-threshold plots to determine powers to explore
-The second module creates soft-threshold plots to determine the powers to explore. It performs network topology analysis and plots the scale-free topology fit index and mean connectivity as functions of the soft-thresholding power. The generated plots are saved as PDF files in the `sft_results/plots directory`, and the scale-free topology data is saved as an RData file in the `sft_results/working_rdata` directory.
+The second module creates soft-threshold plots to determine the powers to explore. It performs network topology analysis and plots the scale-free topology fit index and mean connectivity as functions of the soft-thresholding power. The generated plots are saved as PDF files in the `sft_results/plots` directory, and the scale-free topology data is saved as an RData file in the `sft_results/working_rdata` directory.
 
 ### Module 3: Perform WGCNA and export results
 The third module iterates through the specified soft-threshold powers, creating networks, calculating module eigengenes and correlations, and exporting the results. The module generates dendrogram plots, module-trait relationship plots, correlation and p-value tables, and hub genes for each power. The results are saved in separate directories for each power under the `results` directory.
